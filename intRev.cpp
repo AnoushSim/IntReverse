@@ -21,8 +21,7 @@ int reverse(int a)
        std::cout<<"Number can't begin with 0."<<std::endl;
        return -1;
      }
-  else if(a>0)
-       {
+  else 
           while(a!=0)
             {
               tmp += a%10;
@@ -32,16 +31,4 @@ int reverse(int a)
             }
           return tmp;
        }
-  else if(a<0)
-        {
-          _tmp= -a;
-          while(_tmp!=0)
-            {
-              tmp += _tmp%10;
-              _tmp/=10;
-              if(_tmp!=0) 
-                   tmp*=10;
-            }
-          return -tmp;
-        }
-}
+  
